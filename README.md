@@ -181,7 +181,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 | cert_name | cert_name | String | The certificate name for passive DNS record
-|count | count | String | The passive DNS counts |
+|count | count | String | The passive DNS count |
 |domain| domain | String | The domain of the passive DNS information requested |
 |first_seen | first_seen | String | The first time this domain was seen 
 |city_name | ip.geo.city_name | String | The city name for the domain's IP address |
