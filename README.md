@@ -3,7 +3,7 @@
 ![HYAS](https://www.hyas.com/hubfs/logo-1.svg "HYAS")
 HYAS Insight provides On-Demand Enrichment of Passive DNS, Dynamic DNS, Passive Hash, SSL Certificate, Device Geo (Mobile Geolocation), Sinkhole, and Whois endpoints using the HYAS Insight enrichment API source.
 
-<br></br>
+<br>
 
  This connector is available in the following products and regions:
 
