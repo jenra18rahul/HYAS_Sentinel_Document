@@ -292,20 +292,20 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |related_count | related_count | String | The number of IP addresses connected to this certificate |
-|ip | ssl_certs[].ip | Array of string | The IP address associated with certificate |
-|cert_key | ssl_certs[].ssl_cert.cert_key | Array of string | The certificate key (sha1) |
-|expire_date | ssl_certs[].ssl_cert.expire_date | Array of string |The expiry date of the certificate |
-|issue_date | ssl_certs[].ssl_cert.issue_date | Array of string | The issue date of the certificate |
-|issuer_commonName | ssl_certs[].ssl_cert.issuer_commonName | Array of string |The common name that the certificate was issued from |
-|issuer_countryName | ssl_certs[].ssl_cert.issuer_countryName | Array of string | The country the certificate was issued from |
-|issuer_localityName | ssl_certs[].ssl_cert.issuer_localityName | Array of string | The city where the issuer company is legally located |
-|issuer_organizationName | ssl_certs[].ssl_cert.issuer_organizationName | Array of string |  The organization name that issued the certificate |
-|issuer_organizationalUnitName| ssl_certs[].ssl_cert.issuer_organizationalUnitName | Array of string |  The organization name that issued the certificate |
-|issuer_stateOrProvinceName | ssl_certs[].ssl_cert.issuer_stateOrProvinceName | Array of string | The state or province where the issuer company is legally located |
-|md5 | ssl_certs[].ssl_cert.md5 | Array of string | SSL certificate MD5 Hash |
-|serial_number | ssl_certs[].ssl_cert.serial_number |  Array of string | SSL certificate Serial Number |
-|sha1 | ssl_certs[].ssl_cert.sha1 | Array of string |  SSL certificate SHA1 Hash |
-|sha_256 | ssl_certs[].ssl_cert.sha_256 | Array of string | SSL certificate SHA 256 Hash |
+|ip | ssl_certs[].ip | String Array | The IP address associated with certificate |
+|cert_key | ssl_certs[].ssl_cert.cert_key | String Array | The certificate key (sha1) |
+|expire_date | ssl_certs[].ssl_cert.expire_date | String Array |The expiry date of the certificate |
+|issue_date | ssl_certs[].ssl_cert.issue_date | String Array | The issue date of the certificate |
+|issuer_commonName | ssl_certs[].ssl_cert.issuer_commonName | String Array |The common name that the certificate was issued from |
+|issuer_countryName | ssl_certs[].ssl_cert.issuer_countryName | String Array | The country the certificate was issued from |
+|issuer_localityName | ssl_certs[].ssl_cert.issuer_localityName | String Array | The city where the issuer company is legally located |
+|issuer_organizationName | ssl_certs[].ssl_cert.issuer_organizationName | String Array |  The organization name that issued the certificate |
+|issuer_organizationalUnitName| ssl_certs[].ssl_cert.issuer_organizationalUnitName | String Array |  The organization name that issued the certificate |
+|issuer_stateOrProvinceName | ssl_certs[].ssl_cert.issuer_stateOrProvinceName | String Array | The state or province where the issuer company is legally located |
+|md5 | ssl_certs[].ssl_cert.md5 | String Array | SSL certificate MD5 Hash |
+|serial_number | ssl_certs[].ssl_cert.serial_number |  String Array | SSL certificate Serial Number |
+|sha1 | ssl_certs[].ssl_cert.sha1 | String Array |  SSL certificate SHA1 Hash |
+|sha_256 | ssl_certs[].ssl_cert.sha_256 | String Array | SSL certificate SHA 256 Hash |
 |sig_algo | ssl_certs[].ssl_cert.sig_algo | Array of string | SSL certificate signing algorithm |
 |signature | ssl_certs[].ssl_cert.signature | Array of Array of string | SSL certificate signature |
 |ssl_version | ssl_certs[].ssl_cert.ssl_version | Array of string | SSL Version Information |
