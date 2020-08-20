@@ -13,12 +13,12 @@ HYAS Insight provides On-Demand Enrichment of Passive DNS, Dynamic DNS, Passive 
  | Power Automate | Premium | All [Power Automate regions](https://docs.microsoft.com/en-us/power-automate/regions-overview) except the following:<br>-US Government (GCC)<br>-US Government (GCC High)<br>-China Cloud operated by 21Vianet |
  | Power Apps | Premium | All [Power Apps regions](https://docs.microsoft.com/en-us/power-platform/admin/regions-overview#what-regions-are-available) except the following:<br>-US Government (GCC)<br>-US Government (GCC High)<br>-China Cloud operated by 21Vianet |
 
-<br></br>
+<br>
 
 ## Pre-requisites
 To use this integration, you need to have a HYAS Insight API Key provisioned by HYAS Infosec Inc to authenticate requests to HYAS Insight API.
 
-<br></br>
+<br>
 
 ## Creating a connection
 To connect your account, you will need the following information:
@@ -27,14 +27,14 @@ To connect your account, you will need the following information:
  | ------ | ------ | ------ |
  | X-API-Key | securestring | The X-API-Key for this api |
   
-<br></br>
+<br>
 
  ## Throttling Limits
  | Name | Calls | Renewal Period
  | ------ | ------ | ------ |
  | API calls per connection | 100 | 60 Seconds |
  
- <br></br>
+<br>
 
   
  ## Actions:
@@ -48,7 +48,7 @@ To connect your account, you will need the following information:
   | [Retrieve Device Geo Information for IP Address](#retrieve-device-geo-information-for-ip-address) | Retrieve on demand Device Geo enrichment data for IP Address |
  | [Retrieve SSL Certificate Information for IP Address](#retrieve-ssl-certificate-information-for-ip-address) | Retrieve on demand SSL Certificate enrichment data for IP Address |
 
-<br></br>
+<br>
 
 ### Retrieve Passive DNS Information for Domain or IP Address
 
@@ -67,7 +67,7 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
 #### Returns
 ##### **Body** : [PassiveDNSResults](#passivednsresults)
 
-<br></br>
+<br>
 
 
 ### Retrieve Whois Information for Domain or Email Address or Phone Number
@@ -87,7 +87,7 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
  #### Returns
 ##### **Body** : [WhoisResult](#whoisresult)
 
-<br></br>
+<br>
 
 ### Retrieve Dynamic DNS Information for IP Address or Email Address
 
@@ -105,7 +105,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
 
-<br></br>
+<br>
 
 ### Retrieve Passive Hash Information for IP Address 
 
@@ -121,7 +121,7 @@ Retrieve on demand Passive Hash enrichment data for IP Address
  #### Returns
 ##### **Body** : [passiveHashResult](#passivehashresult)
 
-<br></br>
+<br>
 
  ### Retrieve Sinkhole Information for IP Address
 
@@ -138,7 +138,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
  #### Returns
 ##### **Body** :  [SinkholeResult](#sinkholeresult)
 
-<br></br>
+<br>
 
 ### Retrieve Device Geo Information for IP Address
 
@@ -156,7 +156,7 @@ Retrieve on demand Device Geo enrichment data for IP Address
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)
 
-<br></br>
+<br>
 
 ### Retrieve SSL Certificate Information for IP Address
 
@@ -173,7 +173,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)
 
-<br></br>
+<br>
 
 
 ### PassiveDNSResults
@@ -202,7 +202,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |sha1 | sha1 | String | The sha1 sum of the passive DNS  record |
 |sources | sources | String Array | sources Information |
 
-<br></br>
+<br>
 
 
 ### WhoIsResult
@@ -229,7 +229,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |whois_hash | whois_hash | String |  Hash Information |
 |whois_id | whois_id | String |  Id Information |
 
-<br></br>
+<br>
 
 
 ### DynamicDNSResult
@@ -243,7 +243,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |domain_creator_ip | domain_creator_ip | String | The IP address of the domain creator |
 |email | email | String | The email address connected to the domain |
 
-<br></br>
+<br>
 
 
 ### PassiveHashResult
@@ -252,7 +252,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |domain | domain | String | The domain of the passive hash information requested |
 |md5_count | md5_count | String | MD5 hash count |
 
-<br></br>
+<br>
 
 
 ### SinkholeResult
@@ -267,7 +267,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |organization_name | organization_name | String | The ISP organization for the IP |
 |sink_source | sink_source | String | The ipv4 of the sink source |
 
-<br></br>
+<br>
 
 
 ### DeviceGeoResult
@@ -285,7 +285,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |wifi_bssid | wifi_bssid | String | The BSSID (MAC address) of the WIFI router that the device communicated through |
 |wifi_ssid | wifi_ssid | String | The SSID (name) of the WIFI network that the device communicated through |
 
-<br></br>
+<br>
 
 
 ### SSLCertificateResult
