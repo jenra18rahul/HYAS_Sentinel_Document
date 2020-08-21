@@ -180,27 +180,27 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-| cert_name | cert_name | String | The certificate name for passive DNS record
-|count | count | String | The passive DNS count |
-|domain| domain | String | The domain of the passive DNS information requested |
-|first_seen | first_seen | String | The first time this domain was seen 
-|city_name | ip.geo.city_name | String | The city name for the domain's IP address |
-|country_iso_code | ip.geo.country_iso_code | String | The country ISO code for the domain's IP address |
-|country_name | ip.geo.country_name | String | The country name for the domain's IP address |
-|location_latitude | ip.geo.location_latitude | String | The location latitude for the domain's IP address |
-|location_longitude | ip.geo.location_longitude | String | The location longitude for the domain's IP address |
-|postal_code | ip.geo.postal_code | String | The postal code for the domain's IP address |
-|ip | ip.ip | String | The IP address for the domain |
-|autonomous_system_number | ip.isp.autonomous_system_number | String | The Autonomous System Number(ASN) for the domain's ISP |
-|autonomous_system_organization | ip.isp.autonomous_system_organization | String | The Autonomous System Organization for the domain's ISP |
-|ip_address | ip.isp.ip_address | String | The IP Address for the domain's ISP
-|isp | ip.isp.isp | String | The ISP of the domain |
-|organization | ip.isp.organization | String |The ISP organization of the domain |
-|ipv4 | ipv4 | String | The ipv4 address of the passive DNS record |
-|ipv6 | ipv6 | String | The ipv6 address of the passive DNS record |
-|last_seen | last_seen | String | The last time this domain was seen |
-|sha1 | sha1 | String | The sha1 sum of the passive DNS  record |
-|sources | sources | String Array | sources Information |
+| cert_name | cert_name | string | The certificate name for passive DNS record
+|count | count | string | The passive DNS count |
+|domain| domain | string | The domain of the passive DNS information requested |
+|first_seen | first_seen | string | The first time this domain was seen 
+|city_name | ip.geo.city_name | string | The city name for the domain's IP address |
+|country_iso_code | ip.geo.country_iso_code | string | The country ISO code for the domain's IP address |
+|country_name | ip.geo.country_name | string | The country name for the domain's IP address |
+|location_latitude | ip.geo.location_latitude | string | The location latitude for the domain's IP address |
+|location_longitude | ip.geo.location_longitude | string | The location longitude for the domain's IP address |
+|postal_code | ip.geo.postal_code | string | The postal code for the domain's IP address |
+|ip | ip.ip | string | The IP address for the domain |
+|autonomous_system_number | ip.isp.autonomous_system_number | string | The Autonomous System Number(ASN) for the domain's ISP |
+|autonomous_system_organization | ip.isp.autonomous_system_organization | string | The Autonomous System Organization for the domain's ISP |
+|ip_address | ip.isp.ip_address | string | The IP Address for the domain's ISP
+|isp | ip.isp.isp | string | The ISP of the domain |
+|organization | ip.isp.organization | string |The ISP organization of the domain |
+|ipv4 | ipv4 | string | The ipv4 address of the passive DNS record |
+|ipv6 | ipv6 | string | The ipv6 address of the passive DNS record |
+|last_seen | last_seen | string | The last time this domain was seen |
+|sha1 | sha1 | string | The sha1 sum of the passive DNS  record |
+|sources | sources | string array | sources Information |
 
 <br>
 
@@ -208,29 +208,29 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### WhoIsResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|address | address | String Array | Address Information |
-|city | city | String Array |  The city of the registrant |
-|country | country | String Array | The country of the registrant |
-|data | data | String |  Data Information |
-|datetime | datetime | String |  Date Time Information |
-|domain | domain | String |  The domain of the registrant |
-|domain_2tld | domain_2tld | String | The second-level domain of the registrant |
-|domain_created_datetime | domain_created_datetime | String | The date and time when the Whois record was created |
-|domain_expires_datetime | domain_expires_datetime | String | The date and time when the Whois record expires |
-|domain_updated_datetime | domain_updated_datetime | String | The date and time when the Whois record was last updated |
-|email | email | String Array | Email Information |
-|idn_name | idn_name | String | The international domain name |
-|meta_data | meta_data | String | The metadata information |
-|name | name | String Array | The contact name (registrant contact, administrative contact, technical contact, or abuse contact) |
-|nameserver | nameserver | String Array |  The nameserver domain |
-|phone | phone.phone | String |  The phone number of the registrant in e164 format |
-|carrier | phone.phone_info.carrier | String |  The phone number carrier Information |
-|country | phone.phone_info.country | String |  The phone number Country Information |
-|geo | phone.phone_info.geo | String |  The phone number geo Information |
-|privacy_punch | privacy_punch | Boolean |
-|registrar | registrar | String |  The domain registrar |
-|whois_hash | whois_hash | String |  Hash Information |
-|whois_id | whois_id | String |  Id Information |
+|address | address | string array | Address Information |
+|city | city | string array |  The city of the registrant |
+|country | country | string array | The country of the registrant |
+|data | data | string |  Data Information |
+|datetime | datetime | string |  Date Time Information |
+|domain | domain | string |  The domain of the registrant |
+|domain_2tld | domain_2tld | string | The second-level domain of the registrant |
+|domain_created_datetime | domain_created_datetime | string | The date and time when the Whois record was created |
+|domain_expires_datetime | domain_expires_datetime | string | The date and time when the Whois record expires |
+|domain_updated_datetime | domain_updated_datetime | string | The date and time when the Whois record was last updated |
+|email | email | string array | Email Information |
+|idn_name | idn_name | string | The international domain name |
+|meta_data | meta_data | string | The metadata information |
+|name | name | string array | The contact name (registrant contact, administrative contact, technical contact, or abuse contact) |
+|nameserver | nameserver | string array |  The nameserver domain |
+|phone | phone.phone | string |  The phone number of the registrant in e164 format |
+|carrier | phone.phone_info.carrier | string |  The phone number carrier Information |
+|country | phone.phone_info.country | string |  The phone number Country Information |
+|geo | phone.phone_info.geo | string |  The phone number geo Information |
+|privacy_punch | privacy_punch | boolean |
+|registrar | registrar | string |  The domain registrar |
+|whois_hash | whois_hash | string |  Hash Information |
+|whois_id | whois_id | string |  Id Information |
 
 <br>
 
@@ -238,13 +238,13 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### DynamicDNSResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|a_record | a_record | String | The A record for the domain |
-|account | account | String | The account holder name |
-|created | created | String |The date which the domain was created |
-|created_ip | created_ip | String | The IP address of the account holder |
-|domain | domain | String |The domain associated with the Dynamic DNS information |
-|domain_creator_ip | domain_creator_ip | String | The IP address of the domain creator |
-|email | email | String | The email address connected to the domain |
+|a_record | a_record | string | The A record for the domain |
+|account | account | string | The account holder name |
+|created | created | string |The date which the domain was created |
+|created_ip | created_ip | string | The IP address of the account holder |
+|domain | domain | string |The domain associated with the Dynamic DNS information |
+|domain_creator_ip | domain_creator_ip | string | The IP address of the domain creator |
+|email | email | string | The email address connected to the domain |
 
 <br>
 
@@ -252,8 +252,8 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### PassiveHashResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|domain | domain | String | The domain of the passive hash information requested |
-|md5_count | md5_count | String | MD5 hash count |
+|domain | domain | string | The domain of the passive hash information requested |
+|md5_count | md5_count | string | MD5 hash count |
 
 <br>
 
@@ -261,14 +261,14 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### SinkholeResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|count | count | String | The sinkhole counts |
-|country_name | country_name | String | The country of the IP |
-|data_port | data_port | String | The data port |
-|datetime | datetime | String | The first seen date of the sinkhole |
-|ipv4 | ipv4 | String |  The ipv4 of the sinkhole |
-|last_seen | last_seen | String | The last seen date of the sinkhole |
-|organization_name | organization_name | String | The ISP organization for the IP |
-|sink_source | sink_source | String | The ipv4 of the sink source |
+|count | count | string | The sinkhole counts |
+|country_name | country_name | string | The country of the IP |
+|data_port | data_port | string | The data port |
+|datetime | datetime | string | The first seen date of the sinkhole |
+|ipv4 | ipv4 | string |  The ipv4 of the sinkhole |
+|last_seen | last_seen | string | The last seen date of the sinkhole |
+|organization_name | organization_name | string | The ISP organization for the IP |
+|sink_source | sink_source | string | The ipv4 of the sink source |
 
 <br>
 
@@ -276,17 +276,17 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### DeviceGeoResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|datetime | datetime | String | A date-time string in RFC 3339 format |
-|device_geo_id | device_geo_id | String | Geolocation ID |
-|device_user_agent | device_user_agent | String | The user agent for the device |
-|geo_country_alpha_2 | geo_country_alpha_2 | String | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
-|geo_horizontal_accuracy | geo_horizontal_accuracy | String | Geolocation accuracy Information |
-|ipv4 | ipv4 | String | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
-|ipv6 | ipv6 | String | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
+|datetime | datetime | string | A date-time string in RFC 3339 format |
+|device_geo_id | device_geo_id | string | Geolocation ID |
+|device_user_agent | device_user_agent | string | The user agent for the device |
+|geo_country_alpha_2 | geo_country_alpha_2 | string | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
+|geo_horizontal_accuracy | geo_horizontal_accuracy | string | Geolocation accuracy Information |
+|ipv4 | ipv4 | string | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
+|ipv6 | ipv6 | string | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |latitude | latitude | number | Units are degrees on the WGS 84 spheroid |
 |longitude | longitude | number | Units are degrees on the WGS 84 spheroid |
-|wifi_bssid | wifi_bssid | String | The BSSID (MAC address) of the WIFI router that the device communicated through |
-|wifi_ssid | wifi_ssid | String | The SSID (name) of the WIFI network that the device communicated through |
+|wifi_bssid | wifi_bssid | string | The BSSID (MAC address) of the WIFI router that the device communicated through |
+|wifi_ssid | wifi_ssid | string | The SSID (name) of the WIFI network that the device communicated through |
 
 <br>
 
@@ -294,28 +294,28 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 ### SSLCertificateResult
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-|related_count | related_count | String | The number of IP addresses connected to this certificate |
-|ip | ssl_certs.ip | String | The IP address associated with certificate |
-|cert_key | ssl_certs.ssl_cert.cert_key | String | The certificate key (sha1) |
-|expire_date | ssl_certs.ssl_cert.expire_date | String |The expiry date of the certificate |
-|issue_date | ssl_certs.ssl_cert.issue_date | String | The issue date of the certificate |
-|issuer_commonName | ssl_certs.ssl_cert.issuer_commonName | String |The common name that the certificate was issued from |
-|issuer_countryName | ssl_certs.ssl_cert.issuer_countryName | String | The country the certificate was issued from |
-|issuer_localityName | ssl_certs.ssl_cert.issuer_localityName | String | The city where the issuer company is legally located |
-|issuer_organizationName | ssl_certs.ssl_cert.issuer_organizationName | String |  The organization name that issued the certificate |
-|issuer_organizationalUnitName| ssl_certs.ssl_cert.issuer_organizationalUnitName | String |  The organization name that issued the certificate |
-|issuer_stateOrProvinceName | ssl_certs.ssl_cert.issuer_stateOrProvinceName | String | The state or province where the issuer company is legally located |
-|md5 | ssl_certs.ssl_cert.md5 | String | SSL certificate MD5 Hash |
-|serial_number | ssl_certs.ssl_cert.serial_number |  String | SSL certificate Serial Number |
-|sha1 | ssl_certs.ssl_cert.sha1 | String |  SSL certificate SHA1 Hash |
-|sha_256 | ssl_certs.ssl_cert.sha_256 | String | SSL certificate SHA 256 Hash |
-|sig_algo | ssl_certs.ssl_cert.sig_algo | String | SSL certificate signing algorithm |
-|signature | ssl_certs.ssl_cert.signature | String Array | SSL certificate signature |
-|ssl_version | ssl_certs.ssl_cert.ssl_version | String | SSL Version Information |
-|subject_commonName | ssl_certs.ssl_cert.subject_commonName | String |  The subject name that the certificate was issued to |
-|subject_countryName | ssl_certs.ssl_cert.subject_countryName | String | The country the certificate was issued to |
-|subject_localityName | ssl_certs.ssl_cert.subject_localityName | String |  The city where the subject company is legally located |
-|subject_organizationName | ssl_certs.ssl_cert.subject_organizationName |  String | The organization name that received the certificate
-|subject_organizationalUnitName | |ssl_certs.ssl_cert.subject_organizationalUnitName |  String | The organization name that received the certificate |
-|subject_stateOrProvinceName | ssl_certs.ssl_cert.subject_stateOrProvinceName | String | The state or province name where the subject company is located |
-|timestamp | ssl_certs.ssl_cert.timestamp |  String | Time Stamp Information |
+|related_count | related_count | integer | The number of IP addresses connected to this certificate |
+|ip | ssl_certs.ip | string | The IP address associated with certificate |
+|cert_key | ssl_certs.ssl_cert.cert_key | string | The certificate key (sha1) |
+|expire_date | ssl_certs.ssl_cert.expire_date | string |The expiry date of the certificate |
+|issue_date | ssl_certs.ssl_cert.issue_date | string | The issue date of the certificate |
+|issuer_commonName | ssl_certs.ssl_cert.issuer_commonName | string | The common name that the certificate was issued from |
+|issuer_countryName | ssl_certs.ssl_cert.issuer_countryName | string | The country the certificate was issued from |
+|issuer_localityName | ssl_certs.ssl_cert.issuer_localityName | string | The city where the issuer company is legally located |
+|issuer_organizationName | ssl_certs.ssl_cert.issuer_organizationName | string |  The organization name that issued the certificate |
+|issuer_organizationalUnitName| ssl_certs.ssl_cert.issuer_organizationalUnitName | string |  The organization name that issued the certificate |
+|issuer_stateOrProvinceName | ssl_certs.ssl_cert.issuer_stateOrProvinceName | string | The state or province where the issuer company is legally located |
+|md5 | ssl_certs.ssl_cert.md5 | string | SSL certificate MD5 Hash |
+|serial_number | ssl_certs.ssl_cert.serial_number |  integer | SSL certificate Serial Number |
+|sha1 | ssl_certs.ssl_cert.sha1 | string |  SSL certificate SHA1 Hash |
+|sha_256 | ssl_certs.ssl_cert.sha_256 | string | SSL certificate SHA 256 Hash |
+|sig_algo | ssl_certs.ssl_cert.sig_algo | string | SSL certificate signing algorithm |
+|signature | ssl_certs.ssl_cert.signature | string array | SSL certificate signature |
+|ssl_version | ssl_certs.ssl_cert.ssl_version | integer | SSL Version Information |
+|subject_commonName | ssl_certs.ssl_cert.subject_commonName | string |  The subject name that the certificate was issued to |
+|subject_countryName | ssl_certs.ssl_cert.subject_countryName | string | The country the certificate was issued to |
+|subject_localityName | ssl_certs.ssl_cert.subject_localityName | string |  The city where the subject company is legally located |
+|subject_organizationName | ssl_certs.ssl_cert.subject_organizationName |  string | The organization name that received the certificate
+|subject_organizationalUnitName | |ssl_certs.ssl_cert.subject_organizationalUnitName |  string | The organization name that received the certificate |
+|subject_stateOrProvinceName | ssl_certs.ssl_cert.subject_stateOrProvinceName | string | The state or province name where the subject company is located |
+|timestamp | ssl_certs.ssl_cert.timestamp |  string | Time Stamp Information |
