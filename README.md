@@ -60,8 +60,8 @@ Retrieve on demand Passive DNS enrichment data for Domain or IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain | True | String | Domain you want to enrich |
- | IP Address | ipv4 | True | String | IP Address you want to enrich |
+ | Domain | domain | True | string | Domain you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
 
 
 #### Returns
@@ -80,9 +80,9 @@ Retrieve on demand Whois enrichment data for Domain or Email Address or Phone Nu
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | Domain | domain | True | String | Domain you want to enrich |
- | Email Address | email | True | String | Email Address you want to enrich |
- | Phone Number | phone | True | String | Phone Number you want to enrich |
+ | Domain | domain | True | string | Domain you want to enrich |
+ | Email Address | email | True | string | Email Address you want to enrich |
+ | Phone Number | phone | True | string | Phone Number you want to enrich |
 
  #### Returns
 ##### **Body** : [WhoisResult](#whoisresult)
@@ -99,8 +99,8 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | String | IP Address you want to enrich |
- | Email Address | email | True | String |Email Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
+ | Email Address | email | True | string |Email Address you want to enrich |
 
   #### Returns
 ##### **Body** :  [DynamicDNSResult](#dynamicdnsresult)
@@ -116,7 +116,7 @@ Retrieve on demand Passive Hash enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | String | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
 
  #### Returns
 ##### **Body** : [passiveHashResult](#passivehashresult)
@@ -133,7 +133,7 @@ Retrieve on demand Sinkhole enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | String | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [SinkholeResult](#sinkholeresult)
@@ -150,8 +150,8 @@ Retrieve on demand Device Geo enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IPv4 Address | ipv4 | True | String | IPv4 Address you want to enrich |
- | IPv6 Address | ipv6 | True | String | IPv6 Address you want to enrich |
+ | IPv4 Address | ipv4 | True | string | IPv4 Address you want to enrich |
+ | IPv6 Address | ipv6 | True | string | IPv6 Address you want to enrich |
 
  #### Returns
 ##### **Body** :  [DeviceGeoResult](#devicegeoresult)
@@ -168,7 +168,7 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
  | Name | Key | Required | Type | Description
  | ------ | ------ | ------ | ------ | ------ |
- | IP Address | ipv4 | True | String | IP Address you want to enrich |
+ | IP Address | ipv4 | True | string | IP Address you want to enrich |
  
  #### Returns
 ##### **Body** : [SSLCertificateResult](#sslcertificateresult)
@@ -316,6 +316,6 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |subject_countryName | ssl_certs.ssl_cert.subject_countryName | string | The country the certificate was issued to |
 |subject_localityName | ssl_certs.ssl_cert.subject_localityName | string |  The city where the subject company is legally located |
 |subject_organizationName | ssl_certs.ssl_cert.subject_organizationName |  string | The organization name that received the certificate
-|subject_organizationalUnitName | |ssl_certs.ssl_cert.subject_organizationalUnitName |  string | The organization name that received the certificate |
+|subject_organizationalUnitName | ssl_certs.ssl_cert.subject_organizationalUnitName |  string | The organization name that received the certificate |
 |subject_stateOrProvinceName | ssl_certs.ssl_cert.subject_stateOrProvinceName | string | The state or province name where the subject company is located |
 |timestamp | ssl_certs.ssl_cert.timestamp |  string | Time Stamp Information |
