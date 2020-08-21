@@ -223,7 +223,10 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 |meta_data | meta_data | String | The metadata information |
 |name | name | String Array | The contact name (registrant contact, administrative contact, technical contact, or abuse contact) |
 |nameserver | nameserver | String Array |  The nameserver domain |
-|phone | phone.phone | Array of Objects |  The phone number of the registrant in e164 format |
+|phone | phone.phone | String |  The phone number of the registrant in e164 format |
+|carrier | phone.phone_info.carrier | String |  The phone number carrier Information |
+|country | phone.phone_info.country | String |  The phone number Country Information |
+|geo | phone.phone_info.geo | String |  The phone number geo Information |
 |privacy_punch | privacy_punch | Boolean |
 |registrar | registrar | String |  The domain registrar |
 |whois_hash | whois_hash | String |  Hash Information |
@@ -275,13 +278,13 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | ------ | ------ | ------ | ------ |
 |datetime | datetime | String | A date-time string in RFC 3339 format |
 |device_geo_id | device_geo_id | String | Geolocation ID |
-|device_user_agent | device_user_agent | String | The user agent string for the device |
+|device_user_agent | device_user_agent | String | The user agent for the device |
 |geo_country_alpha_2 | geo_country_alpha_2 | String | The ISO 3316 alpha-2 code for the country associated with the latitude/longitude reported |
 |geo_horizontal_accuracy | geo_horizontal_accuracy | String | Geolocation accuracy Information |
 |ipv4 | ipv4 | String | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
 |ipv6 | ipv6 | String | The ipv4 address assigned to the device. A device may have either or ipv4 and ipv6 |
-|latitude | latitude | String | Units are degrees on the WGS 84 spheroid |
-|longitude | longitude | String | Units are degrees on the WGS 84 spheroid |
+|latitude | latitude | number | Units are degrees on the WGS 84 spheroid |
+|longitude | longitude | number | Units are degrees on the WGS 84 spheroid |
 |wifi_bssid | wifi_bssid | String | The BSSID (MAC address) of the WIFI router that the device communicated through |
 |wifi_ssid | wifi_ssid | String | The SSID (name) of the WIFI network that the device communicated through |
 
@@ -292,27 +295,27 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
 |related_count | related_count | String | The number of IP addresses connected to this certificate |
-|ip | ssl_certs[].ip | String Array | The IP address associated with certificate |
-|cert_key | ssl_certs[].ssl_cert.cert_key | String Array | The certificate key (sha1) |
-|expire_date | ssl_certs[].ssl_cert.expire_date | String Array |The expiry date of the certificate |
-|issue_date | ssl_certs[].ssl_cert.issue_date | String Array | The issue date of the certificate |
-|issuer_commonName | ssl_certs[].ssl_cert.issuer_commonName | String Array |The common name that the certificate was issued from |
-|issuer_countryName | ssl_certs[].ssl_cert.issuer_countryName | String Array | The country the certificate was issued from |
-|issuer_localityName | ssl_certs[].ssl_cert.issuer_localityName | String Array | The city where the issuer company is legally located |
-|issuer_organizationName | ssl_certs[].ssl_cert.issuer_organizationName | String Array |  The organization name that issued the certificate |
-|issuer_organizationalUnitName| ssl_certs[].ssl_cert.issuer_organizationalUnitName | String Array |  The organization name that issued the certificate |
-|issuer_stateOrProvinceName | ssl_certs[].ssl_cert.issuer_stateOrProvinceName | String Array | The state or province where the issuer company is legally located |
-|md5 | ssl_certs[].ssl_cert.md5 | String Array | SSL certificate MD5 Hash |
-|serial_number | ssl_certs[].ssl_cert.serial_number |  String Array | SSL certificate Serial Number |
-|sha1 | ssl_certs[].ssl_cert.sha1 | String Array |  SSL certificate SHA1 Hash |
-|sha_256 | ssl_certs[].ssl_cert.sha_256 | String Array | SSL certificate SHA 256 Hash |
-|sig_algo | ssl_certs[].ssl_cert.sig_algo | Array of string | SSL certificate signing algorithm |
-|signature | ssl_certs[].ssl_cert.signature | Array of Array of string | SSL certificate signature |
-|ssl_version | ssl_certs[].ssl_cert.ssl_version | Array of string | SSL Version Information |
-|subject_commonName | ssl_certs[].ssl_cert.subject_commonName | Array of string |  The subject name that the certificate was issued to |
-|subject_countryName | ssl_certs[].ssl_cert.subject_countryName | Array of string | The country the certificate was issued to |
-|subject_localityName | ssl_certs[].ssl_cert.subject_localityName | Array of string |  The city where the subject company is legally located |
-|subject_organizationName | ssl_certs[].ssl_cert.subject_organizationName |  Array of string | The organization name that received the certificate
-|subject_organizationalUnitName | |ssl_certs[].ssl_cert.subject_organizationalUnitName |  Array of string | The organization name that received the certificate |
-|subject_stateOrProvinceName | ssl_certs[].ssl_cert.subject_stateOrProvinceName | Array of string | The state or province name where the subject company is located |
-|timestamp | ssl_certs[].ssl_cert.timestamp |  Array of string | Time Stamp Information |
+|ip | ssl_certs.ip | String | The IP address associated with certificate |
+|cert_key | ssl_certs.ssl_cert.cert_key | String | The certificate key (sha1) |
+|expire_date | ssl_certs.ssl_cert.expire_date | String |The expiry date of the certificate |
+|issue_date | ssl_certs.ssl_cert.issue_date | String | The issue date of the certificate |
+|issuer_commonName | ssl_certs.ssl_cert.issuer_commonName | String |The common name that the certificate was issued from |
+|issuer_countryName | ssl_certs.ssl_cert.issuer_countryName | String | The country the certificate was issued from |
+|issuer_localityName | ssl_certs.ssl_cert.issuer_localityName | String | The city where the issuer company is legally located |
+|issuer_organizationName | ssl_certs.ssl_cert.issuer_organizationName | String |  The organization name that issued the certificate |
+|issuer_organizationalUnitName| ssl_certs.ssl_cert.issuer_organizationalUnitName | String |  The organization name that issued the certificate |
+|issuer_stateOrProvinceName | ssl_certs.ssl_cert.issuer_stateOrProvinceName | String | The state or province where the issuer company is legally located |
+|md5 | ssl_certs.ssl_cert.md5 | String | SSL certificate MD5 Hash |
+|serial_number | ssl_certs.ssl_cert.serial_number |  String | SSL certificate Serial Number |
+|sha1 | ssl_certs.ssl_cert.sha1 | String |  SSL certificate SHA1 Hash |
+|sha_256 | ssl_certs.ssl_cert.sha_256 | String | SSL certificate SHA 256 Hash |
+|sig_algo | ssl_certs.ssl_cert.sig_algo | String | SSL certificate signing algorithm |
+|signature | ssl_certs.ssl_cert.signature | String Array | SSL certificate signature |
+|ssl_version | ssl_certs.ssl_cert.ssl_version | String | SSL Version Information |
+|subject_commonName | ssl_certs.ssl_cert.subject_commonName | String |  The subject name that the certificate was issued to |
+|subject_countryName | ssl_certs.ssl_cert.subject_countryName | String | The country the certificate was issued to |
+|subject_localityName | ssl_certs.ssl_cert.subject_localityName | String |  The city where the subject company is legally located |
+|subject_organizationName | ssl_certs.ssl_cert.subject_organizationName |  String | The organization name that received the certificate
+|subject_organizationalUnitName | |ssl_certs.ssl_cert.subject_organizationalUnitName |  String | The organization name that received the certificate |
+|subject_stateOrProvinceName | ssl_certs.ssl_cert.subject_stateOrProvinceName | String | The state or province name where the subject company is located |
+|timestamp | ssl_certs.ssl_cert.timestamp |  String | Time Stamp Information |
