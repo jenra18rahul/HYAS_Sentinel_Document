@@ -25,14 +25,14 @@ To connect your account, you will need the following information:
 
 | Name | Type | Description
  | ------ | ------ | ------ |
- | X-API-Key | securestring | The X-API-Key for this api |
+ | X-API-Key | string | The X-API-Key for this api |
   
 <br>
 
  ## Throttling Limits
  | Name | Calls | Renewal Period
  | ------ | ------ | ------ |
- | API calls per connection | 100 | 60 Seconds |
+ | API calls per connection | 1000 | 1 Second |
  
 <br>
 
