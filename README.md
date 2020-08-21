@@ -25,14 +25,14 @@ To connect your account, you will need the following information:
 
 | Name | Type | Description
  | ------ | ------ | ------ |
- | X-API-Key | securestring | The X-API-Key for this api |
+ | X-API-Key | string | The X-API-Key for this api |
   
 <br>
 
  ## Throttling Limits
  | Name | Calls | Renewal Period
  | ------ | ------ | ------ |
- | API calls per connection | 100 | 60 Seconds |
+ | API calls per connection | 1000 | 1 Second |
  
 <br>
 
@@ -110,6 +110,7 @@ Retrieve on demand Dynamic DNS enrichment data for IP Address or Email Address
 ### Retrieve Passive Hash Information for IP Address 
 
 Operation ID: PASSIVE_HASH
+
 Retrieve on demand Passive Hash enrichment data for IP Address
 
  #### Parameters
@@ -180,26 +181,26 @@ Retrieve on demand SSL Certificate enrichment data for IP Address
 
 | Name | Path | Type | Description
 | ------ | ------ | ------ | ------ |
-| cert_name | cert_name | string | The certificate name for passive DNS record
-|count | count | string | The passive DNS count |
-|domain| domain | string | The domain of the passive DNS information requested |
-|first_seen | first_seen | string | The first time this domain was seen 
-|city_name | ip.geo.city_name | string | The city name for the domain's IP address |
-|country_iso_code | ip.geo.country_iso_code | string | The country ISO code for the domain's IP address |
-|country_name | ip.geo.country_name | string | The country name for the domain's IP address |
-|location_latitude | ip.geo.location_latitude | string | The location latitude for the domain's IP address |
-|location_longitude | ip.geo.location_longitude | string | The location longitude for the domain's IP address |
-|postal_code | ip.geo.postal_code | string | The postal code for the domain's IP address |
-|ip | ip.ip | string | The IP address for the domain |
-|autonomous_system_number | ip.isp.autonomous_system_number | string | The Autonomous System Number(ASN) for the domain's ISP |
-|autonomous_system_organization | ip.isp.autonomous_system_organization | string | The Autonomous System Organization for the domain's ISP |
-|ip_address | ip.isp.ip_address | string | The IP Address for the domain's ISP
-|isp | ip.isp.isp | string | The ISP of the domain |
-|organization | ip.isp.organization | string |The ISP organization of the domain |
-|ipv4 | ipv4 | string | The ipv4 address of the passive DNS record |
-|ipv6 | ipv6 | string | The ipv6 address of the passive DNS record |
-|last_seen | last_seen | string | The last time this domain was seen |
-|sha1 | sha1 | string | The sha1 sum of the passive DNS  record |
+| cert_name | cert_name | string | The certificate name Information |
+|count | count | string | The passive DNS count Information |
+|domain| domain | string | The domain Information |
+|first_seen | first_seen | string | The first seen Information | 
+|city_name | ip.geo.city_name | string | The city name Information |
+|country_iso_code | ip.geo.country_iso_code | string | The country ISO code Information |
+|country_name | ip.geo.country_name | string | The country name Information |
+|location_latitude | ip.geo.location_latitude | string | The location Information |
+|location_longitude | ip.geo.location_longitude | string | The location longitude Information |
+|postal_code | ip.geo.postal_code | string | The postal code Information |
+|ip | ip.ip | string | The IP address Information |
+|autonomous_system_number | ip.isp.autonomous_system_number | string | The Autonomous System Number(ASN) Information |
+|autonomous_system_organization | ip.isp.autonomous_system_organization | string | The Autonomous System Organization Information |
+|ip_address | ip.isp.ip_address | string | The IP Address Information |
+|isp | ip.isp.isp | string | The ISP information |
+|organization | ip.isp.organization | string |The ISP organization Information |
+|ipv4 | ipv4 | string | The ipv4 address Information |
+|ipv6 | ipv6 | string | The ipv6 address Information |
+|last_seen | last_seen | string | The last seen Information |
+|sha1 | sha1 | string | The sha1 sum Information |
 |sources | sources | string array | sources Information |
 
 <br>
